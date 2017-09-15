@@ -61,6 +61,11 @@ public class A1Q2 {
        karel.turnLeft();
        karel.move();
        karel.turnLeft();
+       karel.turnLeft();
+       karel.turnLeft();
+       karel.move();
+       karel.turnLeft();
+       karel.turnLeft();
        
        
     
