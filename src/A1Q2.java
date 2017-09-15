@@ -23,6 +23,7 @@ public class A1Q2 {
         // TODO code application logic here
         City kitchener = new City();
         
+        
         //create new walls
        new Wall (kitchener,2,1,Direction.SOUTH);
        new Wall (kitchener, 2,1, Direction. WEST);
@@ -60,6 +61,7 @@ public class A1Q2 {
        karel.turnLeft();
        karel.move();
        karel.turnLeft();
+       
        
     
        
