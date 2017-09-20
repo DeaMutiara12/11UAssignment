@@ -36,6 +36,7 @@ public class A2Q1 {
         new Thing (bali,1,8,Direction.EAST);
         new Thing (bali,1,9,Direction.EAST);
         new Thing (bali,1,10,Direction.EAST);
+        new Thing (bali,1,11,Direction.EAST);
         
         //if karel does not have seven things on his backpack go back and pick it up
         while(karel.countThingsInBackpack()!=7){
