@@ -65,6 +65,8 @@ public class A1Q3 {
         karel.move();
         
         
+        
+      
         //have karel drop the thing
         karel.putThing();
         

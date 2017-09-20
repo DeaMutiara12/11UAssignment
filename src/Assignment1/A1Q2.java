@@ -24,8 +24,7 @@ public class A1Q2 {
     public static void main(String[] args) {
         // TODO code application logic here
         City kitchener = new City();
-        
-        
+       
         //create new walls
        new Wall (kitchener,2,1,Direction.SOUTH);
        new Wall (kitchener, 2,1, Direction. WEST);
