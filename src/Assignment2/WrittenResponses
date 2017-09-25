@@ -1,4 +1,4 @@
-1
+1)
 a) True
 b) True
 c) False
@@ -7,7 +7,7 @@ e) False
 f) True
 g) True
 
-2
+2)
 Statement 1
 -If karel can pick Thing, turn to the right 
 -If karel cannot pick Thing, turn to the left
@@ -15,4 +15,5 @@ Statement 1
 Statement 2
 - If karel cannot pick Thing, turn to the left
 -If karel can pick Thing, turn to the right
-Therefore, they behave the same way, but it got switched.
+
+Therefore, they behave the same way, but the wording of the statments, make them switched.
