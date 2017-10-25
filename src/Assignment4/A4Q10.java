@@ -131,10 +131,10 @@ public class A4Q10 extends javax.swing.JFrame {
         //input in degrees celcius
         String celcius= celciusInput.getText();
         
-        //
+        //convert the strings to integers
         double celciusInput= Integer.parseInt (celcius);
         
-        //
+        //convert celcius into fahrenheit
         double fahrenheitOutput= celciusInput*1.8 + 32;
         
         //output the degrees in celcius
