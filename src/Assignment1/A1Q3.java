@@ -64,7 +64,7 @@ public class A1Q3 {
         karel.turnLeft();
         karel.move();
         
-        
+      
         
       
         //have karel drop the thing
