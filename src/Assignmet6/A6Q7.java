@@ -34,10 +34,7 @@ public class A6Q7 {
             //delete one
             if (numbs [i]==1){
         }else{
-                //delete any multiple of two
-                if (numbs [i]%2 == 0){
-            }else{
-                    //delete multiples of three
+                  //delete multiples of three
                     if (numbs [i]%3 == 0){
                 }else{
                         //dlete any multiples of 5
@@ -58,5 +55,5 @@ public class A6Q7 {
             }
         }
     }
-}
+
         
