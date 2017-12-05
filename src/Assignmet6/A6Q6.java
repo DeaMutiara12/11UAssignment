@@ -17,7 +17,7 @@ public class A6Q6 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // create a scanner
+        //create a scanner
         Scanner input = new Scanner (System.in);
         
         //ask the user how many students there are in the class
@@ -26,34 +26,52 @@ public class A6Q6 {
         //input the number of students in the class
         int students = input.nextInt();
         
-        //ask the user to enter the percentage of each students' marks
-        System.out.println("Please enter the marks, in percentage, of each students: ");
+        //make a list of marks
+        int [] marks = new int [students];
         
-        //input the marks
-        double [] numbs = new double [students];
-        //loop until the marks are typed
-        for (int i=0; i<numbs.length; i++){
-            //insert the marks of the students
-            numbs [i]= input.nextDouble ();
+        //ask he user to input the list of marks
+        System.out.println("Pease enter the students marks: ");
+        for (int i= 0; i< marks.length; i++){
+            marks [i] = input.nextInt ();
         }
-        //loop it 10 times
-        for (int i= 0; i<numbs.length; i++){
-            //
-            for (int j= 0; j<(numbs.length - 1); j++){
-                //put th numbers in order if array is bigger than one
-                if (numbs [j+1]> numbs[j]){
-                    //make a temporary variable 
-                    double temp= numbs [j+1];
-                    numbs [j]= temp;
+        //find the lowest mark and find the gighest mark
+        int low= marks [0];
+        int high= marks [0];
+        //scan each mark
+        for (int i= 0; i< marks.length; i++){
+            if (marks [i]> high){
+                high = marks [i];
+                
+                
+            }else{
+                if (marks [i]< low){
+                    low = marks [i];
                 }
-            }
-        }
-        //order the numbers into ascending order
-        for (int i = (numbs.length - 1); i> -1; i--){
-            //tell the user about the percentage
-            System.out.println("The highset mark is " + numbs [0] + "%.");
+                //print out the highest mark
+                System.out.println("The highest mark is: " + high +"%");
+                
+                //print out the lowest mark
+                System.out.println("The lowest mark is: " + low +"%");
+                
+                //calculate the total of all the marks
+                int total= 0;
+                for (int j=0;i<marks.length; i++){
+                total = total + marks[i];
+                
+                }
+            //calculate the average value
+            double average = total /marks.length;
+                System.out.println("The average mark is: " + average+ "%");
             
         }
+        
+        
+        
+        
     }
     
 }
+}
+    
+
+
