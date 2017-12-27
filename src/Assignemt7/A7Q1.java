@@ -23,6 +23,8 @@ public class A7Q1 {
         
     }
     public static void main(String[] args) {
+       // create object to run the method
+        A7Q1 test = new A7Q1();
         // create a new scanner
         Scanner input = new Scanner (System.in);
         //ask the user to enter the radius
