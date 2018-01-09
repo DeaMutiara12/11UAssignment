@@ -5,18 +5,64 @@
  */
 package Assignemt7;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Donald
  */
 public class A7Q2 {
+    public static int examGrade (String grade){
+        
+        //tell the user
+        System.out.println("You have a/an " + grade);
+        //send back the answer
+        return 0;
+        
+    }
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        System.out.println(Math.pow(0, 2));
+        //create an object to run the methods
+        A7Q2 test = new A7Q2 ();
+        
+        //create a scanner
+        Scanner input = new Scanner (System.in);
+        
+        //ask the user to enter the marks
+        System.out.println("Please enter the mark: ");
+        int grade = input.nextInt();
+        
+        //if the grade is lower than 50
+        if (grade <50){
+            //output an F
+            examGrade ("F");
+        }else{
+            if (grade >= 50 && grade <= 59){
+                //output a D
+                examGrade ("D");
+            }else{
+                if (grade >= 60 && grade  <= 69){
+                    //output a C
+                    examGrade ("C");
+                }else{
+                    if (grade >=70 && grade <=79){
+                        //output a B
+                        examGrade ("B");
+                        
+                    }else{
+                        if (grade >=80){
+                            //output an A
+                            examGrade ("A");
+                        }
+                    }
+                }
+            }
+        }
+        
+        
     }
     
 }
